@@ -61,11 +61,9 @@ link -> http://localhost:8092/api/admin/
 ```
 params
 
-title - схожести в названии
-author - схожести в авторе
-genre - схожести в жанре
-minReleaseDate - от какой даты
-maxReleaseDate - до какой даты
+nickname - схожести в никнейме
+email - схожести в электронной почте
+role - схожести в роли
 ```
 
 6) POST registerAsAdmin -> body
