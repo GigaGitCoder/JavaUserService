@@ -1,4 +1,4 @@
-package library.user.dto;
+package library.user.DTO;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

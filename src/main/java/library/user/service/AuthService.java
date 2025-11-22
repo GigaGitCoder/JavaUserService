@@ -6,8 +6,8 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.stereotype.Service;
-import library.user.dto.AuthRequestDTO;
-import library.user.dto.AuthResponseDTO;
+import library.user.DTO.AuthRequestDTO;
+import library.user.DTO.AuthResponseDTO;
 import library.user.entity.Account;
 import library.user.exception.AuthenticationFailedException;
 

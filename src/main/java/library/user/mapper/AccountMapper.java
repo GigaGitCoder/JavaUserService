@@ -2,8 +2,8 @@ package library.user.mapper;
 
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
-import library.user.dto.AccountRequestDTO;
-import library.user.dto.AccountResponseDTO;
+import library.user.DTO.AccountRequestDTO;
+import library.user.DTO.AccountResponseDTO;
 import library.user.entity.Account;
 
 @Mapper
