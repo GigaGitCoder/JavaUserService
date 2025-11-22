@@ -10,7 +10,7 @@ public class AccountSpecification {
 
     public static Specification<Account> nameFilter(String name) {
         return (root, query, criteriaBuilder) ->
-                name == null ? null : criteriaBuilder.like(criteriaBuilder.lower(root.get("name")),
+                name == null ? null : criteriaBuilder.like(criteriaBuilder.lower(root.get("nickname")),
                         "%" + name.toLowerCase() + "%");
     }
 

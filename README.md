@@ -61,7 +61,7 @@ link -> http://localhost:8092/api/admin/
 ```
 params
 
-nickname - схожести в никнейме
+name - схожести в никнейме
 email - схожести в электронной почте
 role - схожести в роли
 ```
