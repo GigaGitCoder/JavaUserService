@@ -1,7 +1,7 @@
 services:
   postgres:
     image: postgres:18
-    container_name: user_database_postgres
+    container_name: user-database-postgres
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
@@ -15,10 +15,12 @@ services:
       retries: 5
       start_period: 10s
     restart: unless-stopped
+    networks:
+      - library-network
 
   javausers:
     build: .
-    container_name: user_service
+    container_name: user-service
     ports:
       - "8092:8092"
     depends_on:
@@ -31,3 +33,11 @@ services:
       SPRING_DATASOURCE_USERNAME: postgres
       SPRING_DATASOURCE_PASSWORD: postgres
     restart: no
+    networks:
+      - library-network
+
+
+networks:
+  library-network:
+    external: true
+    name: library-network
