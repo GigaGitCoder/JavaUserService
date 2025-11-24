@@ -24,7 +24,7 @@ services:
     ports:
       - "8092:8092"
     depends_on:
-      postgres:
+      user-postgres:
         condition: service_healthy
     environment:
       SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/users
