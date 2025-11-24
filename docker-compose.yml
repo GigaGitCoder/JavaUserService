@@ -26,8 +26,6 @@ services:
     depends_on:
       postgres:
         condition: service_healthy
-    env_file:
-      - .env  # <-- Загрузит все переменные из .env файла
     environment:
       SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/users
       SPRING_DATASOURCE_USERNAME: postgres
