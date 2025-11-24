@@ -1,5 +1,5 @@
 services:
-  postgres:
+  user-postgres:
     image: postgres:18
     container_name: user-database-postgres
     environment:
@@ -18,7 +18,7 @@ services:
     networks:
       - library-network
 
-  javausers:
+  user-service:
     build: .
     container_name: user-service
     ports:
